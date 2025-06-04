@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Validación</title>
+    <script src="script3.js"></script>
     
 </head>
 <body>
@@ -19,23 +20,22 @@
         <span class="error" id="errorPassword"></span>
         <br>
 
-        <button type="button" onclick="validar()" id="btn">Enviar</button>
+        <button type="button" onclick="validar()" id="btnEnviar">Enviar</button>
     </form>
 
     
     <table>
         <thead>
             <tr>
-                <th>telefono</th>
-                <th>contrasenia</th>
-                <th>accion</th>
+                <th>Teléfono</th>
+                <th>Contraseña</th>
+                <th>Acción</th>
             </tr>
         </thead>
         <tbody id="cuerpoTabla">
-
         </tbody>
     </table>
-    <form id="formularioActualizar">
+    <form id="formularioActualizar" style="display:none;">
         <label>Telefono</label>
         <input type="text" id="telefono1"><br>
         <label>Password</label>
